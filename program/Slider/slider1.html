@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+var c=6;
+function myFunction() {
+
+switch(c){
+case 1 :
+   document.getElementById("x").src = "image.png";
+   document.getElementById("p").innerHTML = "welcome Naman!!!";
+c++;
+break;
+
+case 2:
+   document.getElementById("x").src = "image1.png";
+   document.getElementById("p").innerHTML = "welcome HR!!!";
+c++;
+break;
+
+case 3:
+   document.getElementById("x").src = "image2.png";
+   document.getElementById("p").innerHTML = "welcome Shubh!!!";
+c++;
+break;
+case 4:
+   document.getElementById("x").src = "rahul.png";
+   document.getElementById("p").innerHTML = "welcome Rahul!!!";
+c++;
+break;
+default:   document.getElementById("x").src = "image3.png";
+   document.getElementById("p").innerHTML = "welcome kanha!!!";
+c=1;
+break;
+}
+setTimeout(myFunction,1000);
+
+}</script>
+</head>
+
+<body style="background-color:rgb(147, 165, 255)" onload="myFunction()">
+
+<h1 align="center">A Welcomes from bestpeers</h1>
+
+<center>
+<p id="p" style="font-size:30px;color:rgb(113, 255, 0)" ></p>
+<img src="image3.png"id="x" width="500" height="500" style="border:grey 10px solid">
+</center>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+
+	background-image: url(taskbg1.jpg);
+	background-size: cover;
+}
+
+ul li:nth-child(odd) {
+  background:rgb(238, 244, 207);
+}
+li{
+	background-color: white;
+	height: 45px;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul{
+	margin:10px;
+}
+div{
+font-size: 50px;
+font-weight:bold;
+font-family: italic; 
+
+}
+.add_text{
+	width: 360px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 30px;
+}
+#butt{
+	width: 100px;
+	height: 50px;
+	border-radius: 3px;
+}
+#log_butt{
+	width: 100px;
+	height: 50px;
+	border-radius: 3px;
+}
+#o{
+	font-size: 40px;
+}
+.close {
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}

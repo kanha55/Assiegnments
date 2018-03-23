@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>
+HOME
+</title>
+</head>
+<style>
+.prev, .next{
+cursor:pointer;
+position:absolute;
+top:50%;
+width:auto;
+margin-top:-22px;
+padding:16px;
+color:white;
+font-weight:bold;
+font-size:20px;
+
+}
+.next {
+  right: 7px;}
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;color: black;
+}
+
+</style>
+<script>
+var c=0;
+function demo(n){
+
+if(n==-1)
+c=c-1;
+else
+c=c+1;
+if(c<=-1)
+c=5;
+else if(c>5)
+c=0;
+
+switch(c){
+case 0:document.getElementById("img").src="soft.jpeg";
+document.getElementById("p").innerHTML="first";
+c=0;
+break;
+
+case 1:document.getElementById("img").src="soft1.jpeg";
+document.getElementById("p").innerHTML="second";
+c=1;
+break;
+
+case 2:document.getElementById("img").src="soft2.jpg";
+document.getElementById("p").innerHTML="third";
+c=2;
+break;
+case 3:document.getElementById("img").src="soft3.jpg";
+c=3;
+document.getElementById("p").innerHTML="forth";
+break;
+
+case 4:document.getElementById("img").src="soft4.jpeg";
+document.getElementById("p").innerHTML="fifth";
+c=4;
+break;
+default:document.getElementById("img").src="soft5.jpeg";
+document.getElementById("p").innerHTML="six";
+c=5;
+break;
+
+
+}
+
+
+}
+</script>
+
+<style>
+ul{
+list-style-type:none;
+background-color:Orange;
+overflow:hidden;
+}
+li{
+float:left;display:block;
+color:rgb(0, 50, 66);
+text-align:center;
+padding: 15px;
+text-decoration:none;
+}
+li:hover{
+background-color:rgb(106, 170, 71);
+}
+</style>
+<body background="back2.jpg" style="background-size:cover">
+<center><h1 style="color:rgb(80, 206, 255)"> Bestpeers </h1></CENTER>
+
+
+	<ul>
+	<li>Home</li>
+	<li>login</li>
+	<li>Registration</li>
+	<li>Contact Us</li>
+	</ul>
+<a class="prev" onclick="demo(-1)" >&#10094</a>	
+<a class="next" onclick="demo(1)" >&#10097</a>	
+<img src="ss.jpg" width="100%" height="400" id="img">  
+<p id="p"></p></body>
+</html>
