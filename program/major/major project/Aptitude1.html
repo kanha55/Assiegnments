@@ -1,0 +1,135 @@
+
+<html>
+<head>
+<style type="text/css">
+.d1{
+width:200px;
+height:20px;
+background-color:rgb(64,0,0);
+color:white;
+text-align:center;
+padding:10px;
+margin:3px;
+}
+.data{
+width:100%;
+height:200px;
+background-color:black;
+color:white;
+padding:10px;
+display:none;
+}
+#maindiv{
+width:100%;
+background-color:black;
+}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+$('#d1').click(function(){
+$('#data1').slideDown(1000);
+$('#data2').slideUp(1000);
+$('#data3').slideUp(1000);
+$('#data4').slideUp(1000);
+});
+
+$('#d2').click(function(){
+$('#data2').slideDown(1000);
+$('#data1').slideUp(1000);
+$('#data3').slideUp(1000);
+$('#data4').slideUp(1000);
+});
+
+$('#d3').click(function(){
+$('#data3').slideDown(1000);
+$('#data1').slideUp(1000);
+$('#data2').slideUp(1000);
+$('#data4').slideUp(1000);
+});
+
+$('#d4').click(function(){
+$('#data4').slideDown(1000);
+$('#data1').slideUp(1000);
+$('#data2').slideUp(1000);
+$('#data3').slideUp(1000);
+});
+
+
+});
+</script>
+</head>
+<body>
+<div id="maindiv">
+<div id="d1" class="d1"> JAVA</div>
+<div id="data1" class="data"> 
+
+1.	Trigonometry:
+In a right angled   OAB, where  BOA =  ,
+ 
+i.   sin   =	Perpendicular	=	AB	;
+	Hypotenuse		OB	
+ii.   cos   =	Base	=	OA	;
+	Hypotenuse		OB	
+iii.  tan   =	Perpendicular	=	AB	;
+	Base		OA	
+iv.  cosec   =	1	=	OB	;
+	sin  		AB	
+v.   sec   =	1	=	OB	;
+	cos  		OA	
+vi.  cot   =	1	=	OA	;
+	tan  		AB	
+2.	Trigonometrical Identities:
+i.	sin2   + cos2   = 1.
+ii.	1 + tan2   = sec2  .
+iii.	1 + cot2   = cosec2  .
+3.	Values of T-ratios:
+ 	0°	( /6)
+
+30°	( /4)
+
+45°	( /3)
+
+60°	( /2)
+
+90°
+sin  	0	 	1
+2
+	3
+2
+	1
+cos  	1	3
+2
+	1
+2
+	 	0
+tan  	0	1
+3
+	1	3	not defined
+4.	Angle of Elevation:
+ 
+Suppose a man from a point O looks up at an object P, placed above the level of his eye. Then, the angle which the line of sight makes with the horizontal through O, is called the angle of elevation of P as seen from O.
+  Angle of elevation of P from O =  AOP.
+5.	Angle of Depression:
+ 
+Suppose a man from a point O looks down at an object P, placed below the level of his eye, then the angle which the line of sight makes with the horizontal through O, is called the angle of depression of P as seen from O.
+________________________________________
+
+ </div>
+
+<div id="d2" class="d1"> PHP</div>
+<div id="data2" class="data"> 
+PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP 
+ </div>
+<div id="d3" class="d1"> CSS</div>
+<div id="data3" class="data"> 
+CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS CSS 
+ </div>
+<div id="d4" class="d1"> JAVA SCRIPT</div>
+<div id="data4" class="data"> 
+JAVA JAVA JAVA JAVA JAVA JAVA JAVA JAVA 
+ </div>
+</div>
+</body>
+</html>

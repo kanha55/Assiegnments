@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center>
+	<h2>JavaScript Arrays</h2>
+			<table>
+			<tr>
+			<th colspan="6" style="font-size:40px;color:white;">The given Array is </th>
+			</tr>
+
+			<tr>
+			<td>ARRAY</td>
+			<td>45</td>
+			<td>56</td>
+			<td>34</td>
+			<td>57</td>
+			<td>87</td>
+			</tr>
+			<tr>
+			<td>INDEX</td>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			</tr>
+			</table><br><br>
+			<table>
+			<tr>
+			<th colspan="6" style="font-size:40px;color:white">The Sorted  Array with index is		 </th>
+			</tr>
+
+			<tr>
+			<td>ARRAY</td>
+			<td id="a">45</td>
+			<td id="b">56</td>
+			<td id="c">34</td>
+			<td id="d">57</td>
+			<td id="e">87</td>
+			</tr>
+			<tr>
+			<td>INDEX</td>
+			<td id="u">0</td>
+			<td id="v">1</td>
+			<td id="x">2</td>
+			<td id="y">3</td>
+			<td id="z">4</td>
+			</tr>
+			</table>
+</center>
+<p id="demo"></p>
+</body>
+
+<head>
+<script>
+var numbers = [45,56,34,57,87];
+var index=[0,1,2,3,4];
+var temp;
+	for(i=0;i<numbers.length;i++){
+         	for(j=0;j<numbers.length-i;j++){
+		if(numbers[j]>numbers[j+1]){
+		temp=numbers[j];
+		numbers[j]=numbers[j+1];
+		numbers[j+1]=temp;
+		
+		temp=index[j];
+		index[j]=index[j+1];
+		index[j+1]=temp;		
+		}		
+		}
+		
+	}
+document.getElementById("a").innerHTML = numbers[0];
+document.getElementById("b").innerHTML = numbers[1];
+document.getElementById("c").innerHTML = numbers[2];
+document.getElementById("d").innerHTML = numbers[3];
+document.getElementById("e").innerHTML = numbers[4];
+
+
+document.getElementById("u").innerHTML = index[0];
+document.getElementById("v").innerHTML = index[1];
+document.getElementById("x").innerHTML = index[2];
+document.getElementById("y").innerHTML = index[3];
+document.getElementById("z").innerHTML = index[4];
+</script>
+
+<style>
+table{
+border-collapse:collapse;
+}
+table,th,td{
+color:rgb(255, 255, 152);
+padding:30px;
+    border: 5px solid rgb(255, 216, 255);
+}
+body{  background-color:rgb(75, 99, 71);
+}
+td{
+font-size:20px;
+}
+</style>
+</head>
+</html>
+
+

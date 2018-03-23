@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>
+Home
+</title>
+<style>
+.body{
+background-color:rgb(165,56,15);
+}
+.form-login{
+width:400px;
+height:400px;
+background-color:orange;
+text-align:center;
+padding-top:10px;
+}
+.input{
+margin-top:2px;
+border-radius:5px;
+width:390px;
+height:50px;
+font-size:20;
+background-color:LightGray;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+function demo(){
+var userName=document.getElementById("username").value;
+var password=document.getElementById("pwd").value;
+var fullname=document.getElementById("fullname").value;
+localStorage.setItem("userName", userName);
+localStorage.setItem("Password", password);
+localStorage.setItem("fullname", fullname);
+}</script>
+</head>
+
+<body onload="myFunction()" class="body">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="PlacementGuide.html">Placement Guide</a>
+</div>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="PlacementGuide.html">Home</a></li>
+<li ><a href="Written.html">Written</a></li>
+<li><a href="Technical.html">Technical</a></li>
+<li><a href="Hr.html">Hr</a></li>
+<li class="active"><a href="Login.html">Login</a></li>
+<li><a href="About_us.html">About Us</a></li>
+</ul>
+</div>
+</nav>
+<br><br><br><br>
+<center>
+<div class="form-login">
+<form action="Login.html">
+<h1>Registration</h1><br>
+<input type="text" placeholder="Your Full Name" id="fullname" class="input" required>
+<input type="text" placeholder="UserName" id="username" class="input" required>
+<input type="password" placeholder="Password" id="pwd" class="input" required>	
+<input type="number" placeholder="Mobile" class="input" required>	
+<input type="submit" onclick="demo()" value="Registration" class=".btn btn-primary input">
+</form>
+</div>
+</center>
+<br><br><br><br>
+<div class="container-fluid" style="background-color:black;height:100px">
+<center>
+contact us
+@Placement Guide.All Right Reserved 2017.
+</center>
+</div>
+</body>
+</html>

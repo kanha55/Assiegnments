@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> odd digit - even digit</title>
+
+<script src="odd-evJS.js">
+
+</script>
+<!-- link of bootstrap and jquery , css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="oddCSS.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- link of bootstrap and jquery , css closed -->
+
+<script>
+$(document).ready(function() {
+	       $("#start_butt").click(function(){
+	        $("div").animate({left: '550px'},"slow");
+	        $("div").animate({top: '220px'},"slow");
+	    });
+});</script></head>
+
+<body>
+
+<center>	<input type="button" value="start" id="start_butt" class=".btn btn-primary" > </center>
+	<div class="divc">
+<h1>
+odd digit - even digit
+</h1>
+<input type="text" id="text1" placeholder="enter number" required>
+<input type="button" class="btn btn-success" value="submit" id="butt" onclick="demo()">
+
+
+<p id="ans_txt">Please Enter Number </p>
+
+
+</div>
+</body>
+</html>
+

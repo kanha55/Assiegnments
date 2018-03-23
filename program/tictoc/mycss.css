@@ -1,0 +1,18 @@
+body{
+	background: url(backgroundimg.jpeg);
+	background-size: cover;
+}
+table,th,td{
+	margin-top: 150px;
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 300px;
+	height: 100px;	}
+td{
+	background:url(blank.jpg);
+	color: white;
+}
+p{
+	font-size: 50px;
+	color: #ff00ff;
+}

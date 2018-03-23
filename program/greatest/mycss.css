@@ -1,0 +1,13 @@
+body{
+	background-color:rgb(58, 88, 71);
+}
+h1{
+	color:rgb(226, 91, 0);
+}
+input[type="text"]{
+	border-radius: 5px;
+}
+#ans_txt{
+	font-size: 30px;
+	color: rgb(85, 255, 71);
+}
