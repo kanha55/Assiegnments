@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>
+HOME
+</title>
+</head>
+		<style>
+		.prev, .next{
+		cursor:pointer;
+		position:absolute;
+		top:50%;
+		width:auto;
+		margin-top:-22px;
+		padding:16px;
+		color:white;
+		font-weight:bold;
+		font-size:20px;
+
+		}
+		.next {
+		  right: 7px;}
+
+		.prev:hover, .next:hover {
+		  background-color: #f1f1f1;color: black;
+		border:1px solid red;
+                 
+		}
+
+		</style>
+			<script>
+			var c=0;
+			function demo(n,check){
+			if(check==0){
+			if(n==-1)
+			c=c-1;
+			else
+			c=c+1;
+			if(c<=-1)
+			c=5;
+			else if(c>5)
+			c=0;
+			}
+			else if(check==1){
+			c=n;
+			}
+			switch(c){
+			case 0:document.getElementById("img").src="soft.jpeg";
+			document.getElementById("p").innerHTML="first";
+			document.getElementById("0").style.backgroundColor="rgb(44, 189, 71)";
+			document.getElementById("5").style.backgroundColor="white";
+			document.getElementById("4").style.backgroundColor="white";
+			document.getElementById("3").style.backgroundColor="white";
+			document.getElementById("2").style.backgroundColor="white";
+			document.getElementById("1").style.backgroundColor="white";
+			c=0;
+			break;
+
+			case 1:document.getElementById("img").src="soft1.jpeg";
+			document.getElementById("p").innerHTML="second";
+			document.getElementById("0").style.backgroundColor="white";
+			document.getElementById("5").style.backgroundColor="white";
+			document.getElementById("4").style.backgroundColor="white";
+			document.getElementById("3").style.backgroundColor="white";
+			document.getElementById("2").style.backgroundColor="white";
+			document.getElementById("1").style.backgroundColor="rgb(44, 189, 71)";
+			c=1;
+			break;
+
+			case 2:document.getElementById("img").src="soft2.jpg";
+			document.getElementById("p").innerHTML="third";
+			document.getElementById("2").style.backgroundColor="rgb(44, 189, 71)";
+			document.getElementById("5").style.backgroundColor="white";
+			document.getElementById("4").style.backgroundColor="white";
+			document.getElementById("3").style.backgroundColor="white";
+			document.getElementById("1").style.backgroundColor="white";
+			document.getElementById("0").style.backgroundColor="white";
+			c=2;
+			break;
+			case 3:document.getElementById("img").src="soft3.jpg";
+			c=3;
+			document.getElementById("p").innerHTML="forth";
+			document.getElementById("3").style.backgroundColor="rgb(44, 189, 71)";
+			document.getElementById("5").style.backgroundColor="white";
+			document.getElementById("4").style.backgroundColor="white";
+			document.getElementById("2").style.backgroundColor="white";
+			document.getElementById("1").style.backgroundColor="white";
+			document.getElementById("0").style.backgroundColor="white";
+			break;
+
+			case 4:document.getElementById("img").src="soft4.jpeg";
+			document.getElementById("p").innerHTML="fifth";
+			document.getElementById("4").style.backgroundColor="rgb(44, 189, 71)";
+			document.getElementById("5").style.backgroundColor="white";
+			document.getElementById("3").style.backgroundColor="white";
+			document.getElementById("2").style.backgroundColor="white";
+			document.getElementById("1").style.backgroundColor="white";
+			document.getElementById("0").style.backgroundColor="white";
+			c=4;
+			break;
+			default:document.getElementById("img").src="soft5.jpeg";
+			document.getElementById("p").innerHTML="six";
+			document.getElementById("5").style.backgroundColor="rgb(44, 189, 71)";
+			document.getElementById("4").style.backgroundColor="white";
+			document.getElementById("3").style.backgroundColor="white";
+			document.getElementById("2").style.backgroundColor="white";
+			document.getElementById("1").style.backgroundColor="white";
+			document.getElementById("0").style.backgroundColor="white";
+			c=5;
+			break;
+
+
+			}
+
+
+			}
+
+			</script>
+
+<style>
+ul{
+list-style-type:none;
+background-color:rgb(255, 189, 205);
+overflow:hidden;
+}
+li{
+float:left;display:block;
+color:rgb(0, 50, 66);
+text-align:center;
+padding: 15px;
+text-decoration:none;
+}
+li:hover{
+background-color:Black;
+color:white;
+
+}
+
+.dot{
+
+cursor:pointer;
+height:15px;
+width:15px;
+margin:0 2px;
+
+background-color:white;
+border-radius:50%;
+display:inline-block;
+  transition: red 0.6s ease;
+}
+.resume{
+display:none;
+position:absolute;
+}
+
+#R:hover .resume{
+display:inline-block;
+}
+#R .resume :hover{
+background-color:rgb(106, 170, 71);
+}
+
+	.div{
+	width:200;
+	float:left;	
+	margin:10px;
+	text-align:center;
+	font-size:20px;
+	color:rgb(255, 48, 205);
+	background-color:rgb(255, 189, 205);
+	height:200;
+	padding:20px;
+	margin-left:100px;
+	border:5px solid rgb(145, 254, 8);
+	}
+</style>
+<body background="back2.jpg" style="background-size:cover">
+<center><h1 style="color:rgb(80, 206, 255)" id="c4"> Bestpeers </h1></CENTER>
+
+
+	<ul>
+	<li>Home</li>
+	<li>login</li>
+	<li>Registration</li>
+	<li>Contact Us</li>
+	<li ID="R">Resume 
+	<ul class="resume"> <li>fresher</li><br>
+	    <li>Experience</li>	
+       </ul></li>
+	</ul>
+<a class="prev" onclick="demo(-1,0)" >&#10094</a>	
+<a class="next" onclick="demo(1,0)" >&#10097</a>	
+
+
+<div align="center"><img src="soft.jpeg" width="100%" height="400" id="img">
+<spam class="dot" id="0" onclick="demo(0,1)" style="background-color:rgb(44, 189,71);"> </spam>  
+<spam class="dot" id="1" onclick="demo(1,1)"> </spam>
+<spam class="dot" id="2" onclick="demo(2,1)"> </spam>
+<spam class="dot" id="3" onclick="demo(3,1)"> </spam>
+<spam class="dot" id="4" onclick="demo(4,1)"> </spam>
+<spam class="dot" id="5" onclick="demo(5,1)"> </spam>
+<br>
+<spam id="p" style="color:white;">first</spam>
+</div>
+<hr>
+
+<div class="div">
+<img src="android.png" width="100%" height="100%">Android
+</div>
+<div class="div"><img src="Python.png" width="100%" height="100%">Python
+</div>
+<div class="div"><img src="ruby.jpg" width="100%" height="100%">Ruby
+</div>
+<div class="div"><img src="ph.png" width="100%" height="100%">Php
+</div>
+<div class="div"><img src="java.webp" width="100%" height="100%">Java
+</div>
+<div class="div"><img src="nodejs.svg" width="100%" height="100%">NodeJs
+</div>
+
+<footer style="bottom:-2px; position:fixed; background-color: green">
+<a href="#c4"><p>Help</p></a> 
+</footer>
+</body>
+
+</html>
